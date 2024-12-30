@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html> 
+ <head> 
+    <meta charset="UTF-8">
+    <title>🕵️ Sistema de Login Para la Pagina 🕵️</title>  
+    <style>
+        .row {
+            margin-bottom: 10px; /* Espacio entre las filas */
+        }
+
+        .input {
+            width: 200px;
+        }
+
+        .center {
+            text-align: left;
+        }
+    </style>
+ </head>  
+ <body> 
+    <form action = "verificarDatos.php" method = "post" >
+        <!-- Fila para el nombre y contraseña-->
+        <div class="row">
+            <label for="nombre" class="label">Nombre Completo</label>
+            <input id="nombre" type="text" name="nombre" class="input" size="30" maxlength="30" placeholder="Nombre Completo" required>
+        </div>
+
+        <div class="row">
+            <label for="nombre" class="label">Contraseña</label>
+            <input id="contraseña" type="text" name="contraseña" class="input" size="50" maxlength="30" placeholder="Ingrese su Contrseña" required>
+        </div>
+
+        <!-- Fila para el mensaje de datos -->
+        <div class="row center">
+            <strong>Ingrese sus datos</strong>
+        </div>
+
+        <!-- Fila para el botón -->
+        <div class="row center">
+            <button type="submit">Enviar Datos</button>
+        </div>
+    </form>
+ </body>
+</html>
